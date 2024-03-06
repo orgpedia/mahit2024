@@ -1,0 +1,22 @@
+src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
+1
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+	Tesseract on page: 2
+  exec_task: pdftable_finder 
+	==Total:0 Errors=0 
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	**FirstPage: 14: GAD-IT 080/4/2014-O/O DIRECTORATE OF IT-DIT (MH) ==Government Circular No: GAD-IT 080/4/2014-O/O DIRECTORATE OF IT-DIT (MH)
+	extract_order_number:202403051249430211.pdf: >Government Circular No< >GAD-IT 080/4/2014-O/O DIRECTORATE OF IT-DIT (MH)<
+	elapsed_time:202403051249430211.pdf: 0.001262
+  exec_task: doc_translator_hf 
+    Paras: #1 Sentences: #0
+	[0]  #words: 5 #sentences: 1
+	After generate: 2 MB
+  exec_task: text_writer 
+#docs: 1 #processed: 1
